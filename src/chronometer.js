@@ -20,7 +20,8 @@ class Chronometer {
   }
 
   getSeconds() {
-    // ... your code goes here
+    const roundedTime = this.currentTime % 60;
+    return roundedTime;
   }
 
   computeTwoDigitNumber(value) {
