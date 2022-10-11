@@ -25,7 +25,13 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    // ... your code goes here
+    const valueAsString = JSON.stringify(value);
+    if (valueAsString.length === 2) {
+      return valueAsString;
+    }
+    else {
+      return "0" + valueAsString;
+    }
   }
 
   stop() {
