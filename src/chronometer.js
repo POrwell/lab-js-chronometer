@@ -15,7 +15,8 @@ class Chronometer {
 
 
   getMinutes() {
-    // ... your code goes here
+    const roundedTime = Math.floor(this.currentTime / 60);
+    return roundedTime;
   }
 
   getSeconds() {
